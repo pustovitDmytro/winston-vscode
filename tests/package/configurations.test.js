@@ -50,6 +50,7 @@ test('Default configuration', function () {
     const logger = createLogger({
         level      : 'debug',
         transports : [ new transport({
+            name   : 'ABC',
             window : new MockWindow(array)
         }) ]
     });

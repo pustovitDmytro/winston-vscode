@@ -1,8 +1,9 @@
+/* eslint-disable promise/prefer-await-to-callbacks */
 import Transport from 'winston-transport';
 import { MESSAGE, LEVEL } from './constants';
 
 export default class VSCTransport extends Transport {
-    constructor(options = {}) {
+    constructor(options) {
         super(options);
 
         this.name = options.name || this.constructor.name;
